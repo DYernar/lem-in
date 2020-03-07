@@ -7,9 +7,16 @@ type Room struct {
 	Connections []*Room
 	Start bool
 	End bool
+	Visited bool
+	Distance int
 }
 
 type AllData struct {
 	AntNum int
 	Rooms []*Room
+}
+
+type Node struct {
+	Val Room
+	Next *Node
 }
