@@ -9,6 +9,7 @@ type Room struct {
 	End bool
 	Visited bool
 	Distance int
+	Occupied bool
 }
 
 type AllData struct {

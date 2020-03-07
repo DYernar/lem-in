@@ -20,5 +20,24 @@ func main(){
 		fmt.Print(i.Distance)
 		fmt.Println(" away " )
 	}
-
+	fmt.Println("  " )
+	fmt.Println("  " )
+	fmt.Println("  " )
+	var s *Room 
+	var e *Room 
+	for _, r := range GlobalData.Rooms {
+		if r.Start {
+			s = r
+			continue
+		}
+		if r.End {
+			e = r
+			continue
+		}
+	}
+	v := BrFS(s,e)
+	Solution(v)
+	for _, i := range v{
+		fmt.Println(i)
+	}
 }
