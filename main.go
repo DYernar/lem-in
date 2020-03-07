@@ -21,8 +21,4 @@ func main(){
 		fmt.Println(" away " )
 	}
 
-	var newNode Node
-	newNode.Val = *GlobalData.Rooms[7]
-	GetPath(&newNode, nil)
-	fmt.Println(routes)
 }
